@@ -19,6 +19,7 @@ body {
 button {
   cursor: pointer;
   border: none;
+  transition: all 0.4s ease;
 }
 input {
   outline: none;
@@ -54,6 +55,11 @@ input {
   border-radius: 100px;
   padding: 16px 20px;
   background: rgb(50, 50, 50);
+  transition: all 0.4s ease;
+}
+.nav_menu_item:hover {
+  background: rgb(44, 43, 43);
+  transition: all 0.4s ease;
 }
 
 .nav_menu_item p {
@@ -91,7 +97,13 @@ input {
   font-weight: 500;
   line-height: 110%;
   letter-spacing: 0%;
+  transition: all 0.4s ease;
   text-align: left;
+}
+.nav_right a p:hover {
+  transition: all 0.4s ease;
+
+  opacity: 0.7;
 }
 
 .nav_contacts {
@@ -106,7 +118,12 @@ input {
   border-radius: 50%;
   display: flex;
   align-items: center;
+  transition: all 0.4s ease;
   justify-content: center;
+}
+.nav_contacts div:hover {
+  background: rgb(44, 43, 43);
+  transition: all 0.4s ease;
 }
 
 .main_btn {
@@ -159,8 +176,12 @@ header h1 {
   box-sizing: border-box;
   border: 1px solid rgb(239, 237, 253);
   border-radius: 100px;
-
+  transition: all 0.4s ease;
   background: transparent;
+}
+.opacity_btn:hover {
+  transition: all 0.4s ease;
+  background: #ffffff27;
 }
 .header_actions {
   display: flex;
@@ -725,6 +746,10 @@ footer {
   margin-top: -460px;
   padding-top: 580px;
 }
+footer a p:hover,
+footer a h4:hover {
+  text-decoration: underline;
+}
 .footer_menu_list {
   display: flex;
   align-items: start;
@@ -780,6 +805,12 @@ footer {
 .footer_btm .nav_contacts div {
   backdrop-filter: blur(10px);
   background: rgba(5, 65, 103, 0.5);
+  transition: all 0.4s ease;
+}
+
+.footer_btm .nav_contacts div:hover {
+  background: rgba(5, 65, 103, 0.8);
+  transition: all 0.4s ease;
 }
 
 .footer_btm_links {
@@ -962,6 +993,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.4s ease;
+}
+.aritcles_pagination .pag_item:hover {
+  transition: all 0.4s ease;
+  background: rgb(123, 31, 55);
 }
 
 .aritcles_pagination p {
@@ -1090,6 +1126,10 @@ footer {
 .red_btn {
   background: rgb(145, 25, 63);
 }
+.red_btn:hover {
+  transition: all 0.4s ease;
+  background: rgb(123, 16, 50);
+}
 
 .object_desc_input_btns {
   width: 50%;
@@ -1160,6 +1200,11 @@ footer {
 }
 .btns_three .select_btn {
   width: 33.333333%;
+}
+.select_btn:hover {
+  transition: all 0.4s ease;
+  background: rgb(178, 27, 75);
+  border-radius: 5px;
 }
 
 .price_table table {
