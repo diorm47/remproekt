@@ -1043,3 +1043,227 @@ footer {
 .article_content ul p {
   margin: 0;
 }
+
+.price_calc {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.price_calc_block {
+  border-radius: 5px;
+  padding: 40px;
+  background: rgb(31, 31, 31);
+}
+
+.calculator h3 {
+  color: rgb(239, 237, 253);
+  font-family: Manrope;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.object_desc {
+  display: flex;
+  align-items: center;
+}
+
+.select_btn {
+  border-radius: 0;
+  color: rgb(255, 255, 255);
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0%;
+  padding: 0;
+  height: 60px;
+  text-align: center;
+  background: rgb(50, 50, 50);
+}
+
+.red_btn {
+  background: rgb(145, 25, 63);
+}
+
+.object_desc_input_btns {
+  width: 50%;
+}
+
+.object_desc_input_btns p,
+.object_input p {
+  color: rgb(239, 237, 253);
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: 0%;
+  text-align: left;
+  opacity: 0.8;
+
+  margin-bottom: 16px;
+}
+
+.object_descs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.object_descs .object_desc_input_btns {
+  width: 50%;
+}
+
+.object_descs .select_btn {
+  width: 50%;
+}
+
+.object_input {
+  width: 50%;
+}
+.object_input input {
+  width: 100%;
+  height: 60px;
+  color: rgb(255, 255, 255);
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0%;
+  margin: 0;
+  text-align: left;
+}
+
+.object_descs {
+  margin-bottom: 24px;
+}
+
+.object_desc {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.object_desc .red_btn {
+  border-radius: 5px;
+}
+.btns_three {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.btns_three .object_desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btns_three .select_btn {
+  width: 33.333333%;
+}
+
+.price_table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.price_table {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.price_table table {
+  transform: scale(1.01);
+}
+.price_table td {
+  color: rgb(255, 255, 255);
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 16px 0;
+
+  background: rgb(50, 50, 50);
+  border: 1px solid rgb(255, 255, 255, 0.2);
+}
+
+.total td {
+  background: rgb(145, 25, 63);
+}
+
+.form_title h2 {
+  color: rgb(239, 237, 253);
+  font-family: Manrope;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.form_title p {
+  color: rgb(239, 237, 253);
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 145%;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.price_form .contact_right {
+  width: 100%;
+}
+
+.price_form .contact_form_form {
+  max-width: 100%;
+}
+
+.price_form_inputs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.price_form_inputs input {
+  height: 60px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 145%;
+  border-radius: 5px;
+  letter-spacing: 0%;
+}
+
+.price_form .submit_btn {
+  height: 60px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 145%;
+}
+
+.upload_input {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  border-radius: 5px;
+
+  background: rgb(50, 50, 50);
+  height: 150px;
+  margin-bottom: 16px;
+}
+
+.upload_input p {
+  color: rgb(255, 255, 255);
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 145%;
+  opacity: 0.5;
+
+  text-align: left;
+}
