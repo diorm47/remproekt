@@ -10,7 +10,7 @@
     <nav>
       <div class="nav_wrapper container">
         <a href="./index.html">
-         <img class="nav_logo" src="./assets/logo.svg" alt="" />
+          <img class="nav_logo" src="./assets/logo.svg" alt="" />
         </a>
         <div class="nav_menu">
           <a href="#">
@@ -59,7 +59,83 @@
             ></a>
           </div>
           <button class="main_btn red_btn">Оставить заявку</button>
+          <img
+            class="mob_menu_btn nav_r_menu"
+            src="./assets/icons/menu.svg"
+            alt=""
+            onclick="toggleMenu()"
+          />
         </div>
+        <img
+          class="mob_menu_btn nav_w_menu"
+          src="./assets/icons/menu.svg"
+          alt=""
+          onclick="toggleMenu()"
+        />
+      </div>
+
+      <div class="mob_menu">
+        <div class="mob_menu_exit">
+          <img onclick="toggleMenu()" src="./assets/icons/exit.svg" alt="" />
+        </div>
+        <div class="mob_menu_content">
+          <div class="nav_menu">
+            <a href="#">
+              <div class="nav_menu_item">
+                <p>Услуги</p>
+                <div>4</div>
+              </div>
+            </a>
+            <a href="./projects.html">
+              <div class="nav_menu_item">
+                <p>Проекты</p>
+                <div>4</div>
+              </div>
+            </a>
+            <a href="./price.html">
+              <div class="nav_menu_item">
+                <p>Цены</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="nav_menu_item">
+                <p>Контакты</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="nav_menu_item">
+                <p>О нас</p>
+              </div>
+            </a>
+            <a href="./articles.html">
+              <div class="nav_menu_item">
+                <p>Блог</p>
+              </div>
+            </a>
+          </div>
+          <div class="nav_right">
+            <a href="tel:+7 (495) 923-49-69"><p>+7 (495) 923-49-69</p></a>
+            <div class="nav_contacts">
+              <a href="#"
+                ><div>
+                  <img src="./assets/icons/wtsp.svg" alt="" /></div
+              ></a>
+              <a href="#"
+                ><div>
+                  <img src="./assets/icons/tg.svg" alt="" /></div
+              ></a>
+            </div>
+            <button class="main_btn red_btn">Оставить заявку</button>
+          </div>
+        </div>
+
+        <script>
+          function toggleMenu() {
+            document
+              .querySelector(".mob_menu")
+              .classList.toggle("visible_mob_menu");
+          }
+        </script>
       </div>
     </nav>
 

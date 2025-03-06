@@ -1313,6 +1313,62 @@ footer a h4:hover {
   text-align: left;
 }
 
+.mob_menu_btn {
+  display: none;
+  cursor: pointer;
+}
+
+.mob_menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 111;
+  background: #1b191a;
+  padding: 20px;
+}
+.mob_menu_exit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.mob_menu_exit img {
+  cursor: pointer;
+}
+.mob_menu_content {
+  margin-top: 25px;
+}
+.mob_menu_content .nav_menu {
+  flex-direction: column;
+  width: 100%;
+}
+.mob_menu_content .nav_menu a {
+  width: 100%;
+}
+.mob_menu_content .nav_menu_item {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.mob_menu_content .nav_right {
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.mob_menu_content .nav_right button {
+  width: 100%;
+  text-align: center;
+}
+
+.mob_menu {
+  transition: all 0.4s ease;
+  transform: translateX(100%);
+}
+.visible_mob_menu {
+  transition: all 0.4s ease;
+  transform: translateX(0);
+}
 @media only screen and (max-width: 1530px) {
   .container {
     padding-left: 10px;
@@ -1329,6 +1385,15 @@ footer a h4:hover {
   }
   .nav_wrapper .nav_menu {
     display: none;
+  }
+  .nav_wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .nav_r_menu {
+    display: flex;
+    margin-left: 20px;
+    cursor: pointer;
   }
 }
 
@@ -1354,6 +1419,16 @@ footer a h4:hover {
 }
 
 @media only screen and (max-width: 500px) {
+  .price_form .submit_btn {
+    height: 50px;
+    padding: 0;
+  }
+  .price_form_inputs input {
+    height: 50px;
+  }
+  .nav_w_menu {
+    display: flex;
+  }
   .nav_wrapper .nav_right {
     display: none;
   }
