@@ -1312,3 +1312,340 @@ footer a h4:hover {
 
   text-align: left;
 }
+
+@media only screen and (max-width: 1530px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 1370px) {
+  header {
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    gap: 40px;
+  }
+  .nav_wrapper .nav_menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .services_grid,
+  .princips_grid,
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about_wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer_top,
+  .footer_btm {
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .price_calc {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .nav_wrapper .nav_right {
+    display: none;
+  }
+  .nav_wrapper {
+    margin: 10px auto;
+  }
+  .nav_logo {
+    width: 150px;
+  }
+  header {
+    padding-top: 50px;
+    min-height: auto;
+    padding-bottom: 30px;
+    gap: 20px;
+  }
+  header h1 {
+    font-size: 30px;
+  }
+  br {
+    display: none;
+  }
+  .header_gallery img {
+    width: 40px;
+  }
+  .header_actions {
+    flex-direction: column;
+  }
+  .header_actions button,
+  .header_actions,
+  .header_right {
+    width: 100%;
+  }
+  .header_actions button {
+    text-align: center;
+  }
+  .mid_btn {
+    padding: 15px 24px;
+  }
+  section {
+    padding-top: 30px;
+  }
+  .section_title div {
+    padding: 15px 24px;
+  }
+  .section_title h2 {
+    font-size: 25px;
+  }
+  .section_title {
+    margin-bottom: 20px;
+  }
+  .services_grid,
+  .princips_grid,
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .services_card {
+    padding: 15px;
+  }
+  .services_card_img {
+    width: 100%;
+  }
+  .services_card_desc {
+    margin-top: 20px;
+  }
+  .services_card_desc p {
+    font-size: 20px;
+    width: 80%;
+  }
+  .icon_btn {
+    width: 50px;
+    height: 50px;
+  }
+  .about_block {
+    padding: 40px 0;
+  }
+  .about_desc_title h2 {
+    font-size: 25px;
+    margin-bottom: 13px;
+  }
+  .about_desc_title p {
+    font-size: 14px;
+  }
+  .about_projects {
+    display: flex;
+    flex-direction: column;
+  }
+  .about_project h4 {
+    font-size: 20px;
+  }
+  .about_project {
+    padding-bottom: 15px;
+  }
+  .princips {
+    padding: 40px 10px;
+  }
+  .princips {
+    background: #092d45;
+    border-radius: 20px;
+  }
+  .princips_card {
+    padding: 20px;
+  }
+  .princips_card_icon {
+    width: 70px;
+    height: 70px;
+  }
+  .princips_card p {
+    font-size: 23px;
+  }
+  .princips_card span {
+    font-size: 13px;
+  }
+  .projects_item {
+    height: auto;
+    flex-direction: column;
+  }
+  .projects_item_car,
+  .projects_item_desc {
+    width: 100%;
+  }
+  .projects_item_desc {
+    padding: 20px;
+  }
+  .projects_item_desc h3 {
+    font-size: 25px;
+  }
+  .project_details div p {
+    font-size: 14px;
+  }
+  .projects_item_details {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects_item_details div {
+    padding: 15px;
+  }
+  .projects_item_details h5 {
+    font-size: 17px;
+  }
+  .projects_item_details {
+    margin-bottom: 20px;
+  }
+  .big_btn {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+  }
+  .steps_card {
+    padding: 20px;
+  }
+  .steps_card h4 {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+  .steps_card p,
+  .article_card span {
+    font-size: 14px;
+  }
+  .articles {
+    gap: 20px;
+  }
+  .article_card p {
+    font-size: 20px;
+  }
+  .articles_block {
+    padding-bottom: 50px;
+  }
+  .contact_form_btm,
+  .contact_form_top {
+    display: none;
+  }
+  .contact_form {
+    flex-direction: column;
+    padding: 30px 10px;
+    gap: 30px;
+  }
+  .contact_form h2 {
+    font-size: 30px;
+  }
+  .footer_top {
+    flex-direction: column;
+  }
+  .footer_img {
+    display: none;
+  }
+  .footer_menu_list,
+  .footer_btm {
+    gap: 20px;
+    flex-direction: column;
+  }
+  footer {
+    padding-top: 500px;
+  }
+  .footer_btm {
+    align-items: start;
+  }
+  .footer_btm_links {
+    gap: 15px;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .page_title {
+    margin-top: 40px;
+  }
+  .page_title div {
+    margin-bottom: 20px;
+  }
+  .blog_hero {
+    height: auto;
+    padding: 20px;
+  }
+  .blog_hero h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .blog_hero p,
+  .section_title h4 {
+    font-size: 15px;
+  }
+  .page_block {
+    padding-bottom: 50px;
+  }
+  .article_content {
+    margin: 30px 0;
+  }
+  .article_content h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .article_content h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .article_content p {
+    font-size: 14px;
+  }
+  .page_title .project_details {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  .project_main_hero {
+    height: auto;
+    background-position: center;
+    padding: 20px;
+  }
+  .project_main_hero .projects_item_details div {
+    padding: 15px;
+  }
+
+  .price_calc_block {
+    padding: 20px;
+  }
+  .object_descs {
+    flex-direction: column;
+  }
+  .object_descs .object_desc_input_btns,
+  .object_input {
+    width: 100%;
+  }
+  .price_table td {
+    font-size: 12px;
+    padding: 13px 0;
+  }
+  .select_btn {
+    height: 40px;
+    font-size: 14px;
+  }
+  .object_input input {
+    font-size: 14px;
+    height: 40px;
+  }
+  .object_descs {
+    margin-bottom: 17px;
+  }
+  .object_desc_input_btns p,
+  .object_input p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .form_title h2 {
+    font-size: 25px;
+    margin-bottom: 17px;
+  }
+
+  .form_title p {
+    font-size: 14px;
+  }
+  .price_form_inputs {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
