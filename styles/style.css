@@ -1106,7 +1106,7 @@ footer a h4:hover {
 }
 .object_desc {
   display: flex;
-  align-items: center;
+  align-items: center;background: rgb(50, 50, 50);
 }
 
 .select_btn {
