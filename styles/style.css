@@ -1645,6 +1645,9 @@ footer a h4:hover {
   align-items: center;
   justify-content: center;
 }
+.design_format_actions a {
+  width: 100%;
+}
 .design_format_actions p {
   color: rgb(239, 239, 239);
   font-family: Manrope;
