@@ -511,7 +511,7 @@ section {
 }
 
 .projects_item_details h5 {
-  color: rgb(239, 237, 253);
+  color: rgb(239, 237, 253) !important;
   font-family: Manrope;
   font-size: 24px;
   font-weight: 500;
@@ -933,20 +933,23 @@ footer a h4:hover {
   background-position: center;
 }
 
-.project_main_hero .projects_item_details {
-  margin: 0;
+.project_price  {
+  margin: 0 auto;
   width: 100%;
   max-width: 1400px;
+  background: transparent ;
+  margin-bottom: 30px;
+
 }
 
-.project_main_hero .projects_item_details div {
+.project_price  div {
   border-radius: 5px;
   padding: 30px;
   backdrop-filter: blur(10px);
   background: rgba(50, 50, 50, 0.9);
 }
 
-.project_main_hero p {
+.project_price p {
   color: rgb(239, 237, 253);
   font-family: Manrope;
   font-size: 16px;
@@ -958,7 +961,7 @@ footer a h4:hover {
   margin-bottom: 12px;
 }
 
-.project_main_hero h5 {
+.project_price h5 {
   color: rgb(239, 237, 253);
   font-family: Manrope;
   font-size: 32px;
@@ -1820,6 +1823,10 @@ footer a h4:hover {
   .footer_btm {
     gap: 30%;
   }
+  .project_price_container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .hidden {
@@ -2121,9 +2128,10 @@ footer a h4:hover {
     gap: 10px;
   }
   .project_main_hero {
-    height: auto;
+   height: 400px;
     background-position: center;
     padding: 20px;
+    margin-bottom: 10px;
   }
   .project_main_hero .projects_item_details div {
     padding: 15px;
