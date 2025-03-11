@@ -1418,6 +1418,13 @@ footer a h4:hover {
   background-size: cover;
   background-position: center;
 }
+
+.design_header {
+  background: url(../assets/images/design-project.png);
+  background-size: cover;
+  background-position: center;
+}
+
 .secondary_headers {
   margin-bottom: 20px;
 }
@@ -1529,10 +1536,126 @@ footer a h4:hover {
   text-align: left;
 }
 
-.landspace_cards p, .landspace_cards h4{
-    width: 75%;
+.landspace_cards p,
+.landspace_cards h4 {
+  width: 75%;
 }
 
+.design_project_card {
+  border-radius: 10px;
+  padding: 30px;
+  background: rgb(31, 31, 31);
+}
+.design_project_card img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.design_project_card p {
+  color: rgb(239, 239, 239);
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 12px;
+}
+.design_project_card span {
+  color: rgb(239, 237, 253);
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 145%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.documents_card span {
+  color: rgb(239, 237, 253);
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 145%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.design_ideal .documents_card p {
+  margin-bottom: 12px;
+  max-width: 422px;
+}
+.design_ideal .documents_card p {
+  max-width: 451px;
+}
+
+.design_format {
+  border-radius: 10px;
+
+  background: rgb(31, 31, 31);
+  padding: 30px;
+}
+
+.design_format_top h4 {
+  color: rgb(239, 239, 239);
+  font-family: Manrope;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.design_format_top p {
+  font-family: Manrope;
+  max-width: 436px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 145%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(239, 239, 239);
+}
+
+.design_format_top p span {
+  color: rgb(115, 115, 115);
+}
+.more_design_desc {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+.design_format_top {
+  margin-bottom: 60px;
+}
+.design_format_actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.design_format_actions p {
+  color: rgb(239, 239, 239);
+  font-family: Manrope;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 145%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.design_format_actions button {
+  width: 100%;
+}
+
+.design_format_actions .opacity_btn {
+  box-sizing: border-box;
+border: 1px solid rgb(123, 31, 55);
+border-radius: 100px;
+margin-top: 10px;
+}
 @media only screen and (max-width: 1860px) {
   .container {
     padding-left: 20px;
