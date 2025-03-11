@@ -12,8 +12,8 @@
         <a href="./index.html">
           <img class="nav_logo" src="./assets/logo.svg" alt="" />
         </a>
-        <div class="nav_menu">
-          <a href="#">
+         <div class="nav_menu">
+           <a href="index.html#services" class="scroll-link">
             <div class="nav_menu_item">
               <p>Услуги</p>
               <div>4</div>
@@ -30,12 +30,12 @@
               <p>Цены</p>
             </div>
           </a>
-          <a href="#">
+          <a href="#contacts-block" class="scroll-link">
             <div class="nav_menu_item">
               <p>Контакты</p>
             </div>
           </a>
-          <a href="#">
+             <a href="index.html#about-us" class="scroll-link">
             <div class="nav_menu_item">
               <p>О нас</p>
             </div>
@@ -47,7 +47,7 @@
           </a>
         </div>
         <div class="nav_right">
-          <a href="tel:+7 (495) 923-49-69"><p>+7 (495) 923-49-69</p></a>
+          <a class="nav_phone" href="tel:+7 (495) 923-49-69"><p>+7 (495) 923-49-69</p></a>
           <div class="nav_contacts">
             <a href="#"
               ><div>
@@ -58,7 +58,9 @@
                 <img src="./assets/icons/tg.svg" alt="" /></div
             ></a>
           </div>
-          <button class="main_btn red_btn">Оставить заявку</button>
+            <a href="#form" class="scroll-link">
+            <button class="main_btn red_btn">Оставить заявку</button></a
+          >
           <img
             class="mob_menu_btn nav_r_menu"
             src="./assets/icons/menu.svg"
@@ -79,42 +81,42 @@
           <img onclick="toggleMenu()" src="./assets/icons/exit.svg" alt="" />
         </div>
         <div class="mob_menu_content">
-          <div class="nav_menu">
-            <a href="#">
-              <div class="nav_menu_item">
-                <p>Услуги</p>
-                <div>4</div>
-              </div>
-            </a>
-            <a href="./projects.html">
-              <div class="nav_menu_item">
-                <p>Проекты</p>
-                <div>4</div>
-              </div>
-            </a>
-            <a href="./price.html">
-              <div class="nav_menu_item">
-                <p>Цены</p>
-              </div>
-            </a>
-            <a href="#">
-              <div class="nav_menu_item">
-                <p>Контакты</p>
-              </div>
-            </a>
-            <a href="#">
-              <div class="nav_menu_item">
-                <p>О нас</p>
-              </div>
-            </a>
-            <a href="./articles.html">
-              <div class="nav_menu_item">
-                <p>Блог</p>
-              </div>
-            </a>
-          </div>
+      <div class="nav_menu">
+           <a href="index.html#services" class="scroll-link">
+            <div class="nav_menu_item">
+              <p>Услуги</p>
+              <div>4</div>
+            </div>
+          </a>
+          <a href="./projects.html">
+            <div class="nav_menu_item">
+              <p>Проекты</p>
+              <div>4</div>
+            </div>
+          </a>
+          <a href="./price.html">
+            <div class="nav_menu_item">
+              <p>Цены</p>
+            </div>
+          </a>
+          <a href="#contacts-block" class="scroll-link">
+            <div class="nav_menu_item">
+              <p>Контакты</p>
+            </div>
+          </a>
+             <a href="index.html#about-us" class="scroll-link">
+            <div class="nav_menu_item">
+              <p>О нас</p>
+            </div>
+          </a>
+          <a href="./articles.html">
+            <div class="nav_menu_item">
+              <p>Блог</p>
+            </div>
+          </a>
+        </div>
           <div class="nav_right">
-            <a href="tel:+7 (495) 923-49-69"><p>+7 (495) 923-49-69</p></a>
+            <a class="nav_phone" href="tel:+7 (495) 923-49-69"><p>+7 (495) 923-49-69</p></a>
             <div class="nav_contacts">
               <a href="#"
                 ><div>
@@ -125,7 +127,9 @@
                   <img src="./assets/icons/tg.svg" alt="" /></div
               ></a>
             </div>
-            <button class="main_btn red_btn">Оставить заявку</button>
+              <a href="#form" class="scroll-link">
+            <button class="main_btn red_btn">Оставить заявку</button></a
+          >
           </div>
         </div>
 
@@ -729,7 +733,7 @@
       </div>
     </section>
 
-    <div class="contact_form container">
+   <div class="contact_form container" id="form">
       <img
         class="contact_form_top"
         src="./assets/images/contacts-top.svg"
@@ -781,7 +785,7 @@
       </div>
     </div>
 
-    <footer>
+    <footer id="contacts-block">
       <img class="footer_img" src="./assets/images/footer-img.png" alt="" />
       <div class="footer_wrapper container">
         <div class="section_title footer_title">
@@ -839,5 +843,6 @@
         </div>
       </div>
     </footer>
+    <script src="./scripts/scripts.js"></script>
   </body>
 </html>

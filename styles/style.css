@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -843,6 +847,7 @@ footer a h4:hover {
   position: absolute;
   right: 0;
   bottom: 0;
+  opacity: 0.3;
 }
 
 .page_title {
@@ -1328,9 +1333,9 @@ footer a h4:hover {
 
 .mob_menu {
   position: fixed;
-  width: 100%;
+  width: 85%;
   height: 100vh;
-  left: 0;
+  right: 0;
   top: 0;
   z-index: 111;
   background: #1b191a;
@@ -1357,11 +1362,16 @@ footer a h4:hover {
 .mob_menu_content .nav_menu_item {
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+  background: transparent;
+  padding: 0;
+  height: 30px;
 }
 .mob_menu_content .nav_right {
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 30px;
+  align-items: start;
+  gap: 20px;
 }
 
 .mob_menu_content .nav_right button {
@@ -1652,9 +1662,9 @@ footer a h4:hover {
 
 .design_format_actions .opacity_btn {
   box-sizing: border-box;
-border: 1px solid rgb(123, 31, 55);
-border-radius: 100px;
-margin-top: 10px;
+  border: 1px solid rgb(123, 31, 55);
+  border-radius: 100px;
+  margin-top: 10px;
 }
 @media only screen and (max-width: 1860px) {
   .container {
@@ -1695,6 +1705,11 @@ margin-top: 10px;
 }
 
 @media only screen and (max-width: 1200px) {
+  .grid_4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 11px;
+  }
   .services_grid,
   .princips_grid,
   .grid {
@@ -1704,8 +1719,7 @@ margin-top: 10px;
     flex-direction: column;
     gap: 30px;
   }
-  .footer_top,
-  .footer_btm {
+  .footer_top {
     gap: 20px;
     justify-content: space-between;
   }
@@ -1713,9 +1727,45 @@ margin-top: 10px;
     display: flex;
     flex-direction: column;
   }
+
+  .footer_btm {
+    gap: 30%;
+  }
 }
 
+.hidden {
+  display: none;
+}
 @media only screen and (max-width: 500px) {
+  .hide {
+    display: none;
+  }
+  .header_gallery {
+    margin-bottom: 0;
+  }
+  .hidden {
+    display: flex;
+  }
+  .nav_wrapper .nav_contacts div {
+    width: 35px;
+    height: 35px;
+  }
+  .nav_wrapper .nav_contacts div img {
+    width: 15px;
+  }
+  .nav_r_menu {
+    margin-left: 10px;
+  }
+  .landspace_cards p,
+  .landspace_cards h4 {
+    width: 100%;
+  }
+  .documents_card p {
+    font-size: 20px;
+  }
+  .sservices_card .main_btn {
+    max-width: 100%;
+  }
   .price_form .submit_btn {
     height: 50px;
     padding: 0;
@@ -1723,10 +1773,14 @@ margin-top: 10px;
   .price_form_inputs input {
     height: 50px;
   }
-  .nav_w_menu {
+  /* .nav_w_menu {
     display: flex;
+  } */
+  .nav_wrapper .nav_right .nav_phone,
+  .nav_wrapper .nav_right .main_btn {
+    display: none;
   }
-  .nav_wrapper .nav_right {
+  .mob_menu .main_btn {
     display: none;
   }
   .nav_wrapper {
@@ -1740,9 +1794,12 @@ margin-top: 10px;
     min-height: auto;
     padding-bottom: 30px;
     gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 500px;
   }
   header h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   br {
     display: none;
@@ -1833,7 +1890,7 @@ margin-top: 10px;
     height: 70px;
   }
   .princips_card p {
-    font-size: 23px;
+    font-size: 20px;
   }
   .princips_card span {
     font-size: 13px;
@@ -1937,7 +1994,9 @@ margin-top: 10px;
   }
   .blog_hero {
     height: auto;
-    padding: 20px;
+    padding: 80px 20px;
+    background-position: center;
+    border-radius: 15px;
   }
   .blog_hero h2 {
     font-size: 30px;
@@ -2019,5 +2078,54 @@ margin-top: 10px;
   .price_form_inputs {
     flex-direction: column;
     gap: 0px;
+  }
+
+  .header_left h3 {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .header_left .section_title div {
+    padding: 10px;
+  }
+  .header_left .section_title div p {
+    font-size: 10px;
+  }
+  .design_project_card,
+  .documents_card,
+  .design_format,
+  .sservices_card {
+    padding: 15px;
+  }
+  .design_format_top h4 {
+    font-size: 28px;
+  }
+
+  .mt120px {
+    margin-top: 50px;
+  }
+
+  .documents_card_img {
+    width: 60px;
+    height: 60px;
+  }
+  .sec_serv_w {
+    padding-bottom: 50px;
+  }
+  .submit_btn,
+  .contact_input {
+    height: 50px;
+    padding: 0;
+  }
+  .contact_input {
+    padding-left: 12px;
+    font-size: 16px;
+  }
+  .grid_4 {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+  }
+  .nav_wrapper .nav_right {
+    gap: 2px;
   }
 }
