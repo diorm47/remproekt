@@ -893,9 +893,6 @@ footer a h4:hover {
 }
 
 .project_main_hero {
-  background: url(../assets/images/p-gallery/main.png);
-  background-size: cover;
-  background-position: center;
   border-radius: 5px;
   margin-bottom: 30px;
   height: 900px;
@@ -903,6 +900,37 @@ footer a h4:hover {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+}
+.project_main_hero_1 {
+  background: url(../assets/images/projects/1.JPG);
+  background-size: cover;
+  background-position: center;
+}
+.project_main_hero_2 {
+  background: url(../assets/images/projects/2.JPG);
+  background-size: cover;
+  background-position: center;
+}
+.project_main_hero_3 {
+  background: url(../assets/images/projects/3.JPG);
+  background-size: cover;
+  background-position: center;
+}
+.project_main_hero_4 {
+  background: url(../assets/images/projects/4.JPG);
+  background-size: cover;
+  background-position: center;
+}
+
+.project_main_hero_5 {
+  background: url(../assets/images/projects/5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.project_main_hero_6 {
+  background: url(../assets/images/projects/6.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .project_main_hero .projects_item_details {
@@ -943,6 +971,63 @@ footer a h4:hover {
 .project_gallery_grid img {
   width: 100%;
   border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.project_gallery_grid img:hover {
+  transform: scale(1.05);
+  transition: all 0.4s ease;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+}
+.lightbox .prev,
+.lightbox .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+ 
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox .prev {
+  left: 20px;
+}
+.lightbox .next {
+  right: 20px;
+}
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .blog_hero {
