@@ -27,6 +27,11 @@ input {
 }
 
 .container {
+  max-width: 1840px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container_s {
   max-width: 1520px;
   width: 100%;
   margin: 0 auto;
@@ -136,7 +141,7 @@ input {
   font-weight: 500;
   line-height: 110%;
   letter-spacing: 0%;
-  text-align: left;
+  text-align: center;
 }
 .red_btn {
   background: rgb(145, 25, 63);
@@ -885,9 +890,10 @@ footer a h4:hover {
 .project_main_hero {
   background: url(../assets/images/p-gallery/main.png);
   background-size: cover;
+  background-position: center;
   border-radius: 5px;
   margin-bottom: 30px;
-  height: 700px;
+  height: 900px;
   padding: 60px 30px;
   display: flex;
   align-items: flex-end;
@@ -897,6 +903,7 @@ footer a h4:hover {
 .project_main_hero .projects_item_details {
   margin: 0;
   width: 100%;
+  max-width: 1400px;
 }
 
 .project_main_hero .projects_item_details div {
@@ -1106,7 +1113,8 @@ footer a h4:hover {
 }
 .object_desc {
   display: flex;
-  align-items: center;background: rgb(50, 50, 50);
+  align-items: center;
+  background: rgb(50, 50, 50);
 }
 
 .select_btn {
@@ -1369,10 +1377,176 @@ footer a h4:hover {
   transition: all 0.4s ease;
   transform: translateX(0);
 }
-@media only screen and (max-width: 1530px) {
+
+/*  */
+
+.header_left .section_title {
+  margin: 0;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 16px;
+}
+
+.header_left h3 {
+  color: rgb(239, 239, 239);
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 145%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 24px;
+}
+
+.remont_header {
+  background: url(../assets/images/remont.png);
+  background-size: cover;
+  background-position: center;
+}
+.apartment_header {
+  background: url(../assets/images/apartment.png);
+  background-size: cover;
+  background-position: center;
+}
+.docum_header {
+  background: url(../assets/images/documentations.png);
+  background-size: cover;
+  background-position: center;
+}
+.landspace_header {
+  background: url(../assets/images/landspace.png);
+  background-size: cover;
+  background-position: center;
+}
+.secondary_headers {
+  margin-bottom: 20px;
+}
+
+.grid_4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 11px;
+}
+
+.sservices_card {
+  border-radius: 10px;
+
+  background: rgb(31, 31, 31);
+  padding: 30px;
+}
+.sservices_card h4 {
+  color: rgb(239, 239, 239);
+  font-family: Manrope;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.sservices_card p {
+  color: rgb(239, 239, 239);
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 145%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.sservices_card .main_btn {
+  width: 100%;
+  max-width: 313px;
+  text-align: center;
+}
+.sec_serv_w {
+  padding-bottom: 120px;
+}
+.sservices_card h5 {
+  color: rgb(239, 239, 239);
+  font-family: Manrope;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 145%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.mt120px {
+  margin-top: 120px;
+}
+
+.serv_sec .main_btn {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 15px;
+}
+
+.sservices_card div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+.sservices_card div p {
+  margin: 0;
+}
+
+.sservices_card div span {
+  opacity: 0.5;
+}
+
+.header_left .section_title div {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.documents_card {
+  border-radius: 10px;
+  padding: 30px;
+  background: rgb(31, 31, 31);
+}
+
+.documents_card_img {
+  background: rgb(123, 31, 55);
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
+.documents_card p {
+  color: rgb(239, 239, 239);
+  font-family: Manrope;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.landspace_cards p, .landspace_cards h4{
+    width: 75%;
+}
+
+@media only screen and (max-width: 1860px) {
   .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media only screen and (max-width: 1530px) {
+  .container,
+  .container_s {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .project_main_hero {
+    height: 700px;
   }
 }
 
