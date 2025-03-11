@@ -1818,6 +1818,9 @@ footer a h4:hover {
   .header_right {
     width: 100%;
   }
+  .header_actions a {
+    width: 100%;
+  }
   .header_actions button {
     text-align: center;
   }
