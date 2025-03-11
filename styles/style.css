@@ -933,16 +933,15 @@ footer a h4:hover {
   background-position: center;
 }
 
-.project_price  {
+.project_price {
   margin: 0 auto;
   width: 100%;
   max-width: 1400px;
-  background: transparent ;
+  background: transparent;
   margin-bottom: 30px;
-
 }
 
-.project_price  div {
+.project_price div {
   border-radius: 5px;
   padding: 30px;
   backdrop-filter: blur(10px);
@@ -1007,7 +1006,7 @@ footer a h4:hover {
   transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.5);
   border: none;
- 
+
   cursor: pointer;
   font-size: 24px;
   border-radius: 50%;
@@ -1523,6 +1522,24 @@ footer a h4:hover {
   background-size: cover;
   background-position: center;
 }
+.engineering_header {
+  background: url(../assets/images/engineering.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.design_project_card .main_btn {
+  width: 100%;
+  margin-top: 20px;
+}
+.design_project_card h4 {
+  font-family: Manrope;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  color: #efefef;
+}
 
 .secondary_headers {
   margin-bottom: 20px;
@@ -1757,6 +1774,7 @@ footer a h4:hover {
   border: 1px solid rgb(123, 31, 55);
   border-radius: 100px;
   margin-top: 10px;
+  display: none;
 }
 @media only screen and (max-width: 1860px) {
   .container {
@@ -2128,7 +2146,7 @@ footer a h4:hover {
     gap: 10px;
   }
   .project_main_hero {
-   height: 400px;
+    height: 400px;
     background-position: center;
     padding: 20px;
     margin-bottom: 10px;
