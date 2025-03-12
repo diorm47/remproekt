@@ -1527,6 +1527,12 @@ footer a h4:hover {
   background-size: cover;
   background-position: center;
 }
+.project_main_hero  .project_price {
+ margin: 0;
+}
+.project_price_container {
+  display: none;
+}
 
 .design_project_card .main_btn {
   width: 100%;
@@ -2221,6 +2227,13 @@ footer a h4:hover {
   .mt120px {
     margin-top: 50px;
   }
+  .project_main_hero  .project_price {
+display: none;
+   }
+   .project_price_container {
+     display: flex;
+   }
+   
 
   .documents_card_img {
     width: 60px;
