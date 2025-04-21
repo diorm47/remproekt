@@ -187,27 +187,92 @@
           <div class="object_desc_input_btns">
             <p>Тип объекта</p>
             <div class="object_desc">
-              <button class="main_btn red_btn select_btn" data-type="flat">Квартира</button>
-              <button class="main_btn black_btn select_btn" data-type="house">Дом, таунхаус</button>
+              <button class="main_btn red_btn select_btn" data-type="flat">
+                Квартира
+              </button>
+              <button class="main_btn black_btn select_btn" data-type="house">
+                Дом, таунхаус
+              </button>
             </div>
           </div>
           <div class="object_input">
             <p>Площадь объекта (м²)</p>
-            <input type="text" class="contact_input" id="area_input" />
+            <input
+              type="text"
+              class="contact_input"
+              id="area_input"
+              value="100"
+            />
           </div>
         </div>
-      
+
         <div class="object_desc_input_btns btns_three">
           <p>Уровень ремонта</p>
           <div class="object_desc">
-            <button class="main_btn red_btn select_btn" data-level="econom">Эконом</button>
-            <button class="main_btn black_btn select_btn" data-level="standard">Стандарт</button>
-            <button class="main_btn black_btn select_btn" data-level="elite">Элитный</button>
+            <button class="main_btn red_btn select_btn" data-level="econom">
+              Эконом
+            </button>
+            <button class="main_btn black_btn select_btn" data-level="standard">
+              Стандарт
+            </button>
+            <button class="main_btn black_btn select_btn" data-level="elite">
+              Элитный
+            </button>
           </div>
         </div>
-      
-        <div class="calc_result" style="margin-top: 20px;">
-          <h4>Итоговая стоимость: <span id="result_price">—</span> ₽</h4>
+
+        <div class="price_table">
+          <table>
+            <thead>
+              <tr>
+                <td>Наименование работ</td>
+                <td>Стоимость работ</td>
+                <td>Черновой материал</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Черновая отделка</td>
+                <td>430 000</td>
+                <td>397 000</td>
+              </tr>
+              <tr>
+                <td>Чистовая отделка</td>
+                <td>510 000</td>
+                <td>381 000</td>
+              </tr>
+              <tr>
+                <td>Электромонтаж</td>
+                <td>105 000</td>
+                <td>71 000</td>
+              </tr>
+              <tr>
+                <td>ХВС, ГВС</td>
+                <td>83 500</td>
+                <td>57 000</td>
+              </tr>
+              <tr>
+                <td>Канализация</td>
+                <td>21 000</td>
+                <td>18 000</td>
+              </tr>
+              <tr>
+                <td>Отопление</td>
+                <td>103 000</td>
+                <td>117 000</td>
+              </tr>
+              <tr>
+                <td>Котельная</td>
+                <td>65 000</td>
+                <td>145 000</td>
+              </tr>
+              <tr class="total">
+                <td>Итоговая сумма</td>
+                <td><span id="result_price"></span></td>
+                <td>1 186 500</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
 

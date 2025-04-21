@@ -52,3 +52,5 @@ function calculate() {
   const total = area * pricePerSq;
   resultPrice.textContent = total.toLocaleString("ru-RU");
 }
+
+calculate()
