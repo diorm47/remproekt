@@ -56,6 +56,9 @@ input {
   align-items: center;
   gap: 10px;
 }
+.nav_menu_sec {
+  display: none;
+}
 .nav_menu_item {
   display: flex;
   align-items: center;
@@ -1237,7 +1240,7 @@ footer a h4:hover {
 }
 
 .object_desc_input_btns p,
-.object_input p {
+.object_input p, .calc_result h4 {
   color: rgb(239, 237, 253);
   font-family: Manrope;
   font-size: 18px;
@@ -1809,6 +1812,10 @@ footer a h4:hover {
   .nav_wrapper .nav_menu {
     display: none;
   }
+  .nav_wrapper
+  .nav_menu_sec  {
+    display: flex;
+  }
   .nav_wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -1821,6 +1828,9 @@ footer a h4:hover {
 }
 
 @media only screen and (max-width: 1200px) {
+  .nav_right a {
+    display: none;
+  }
   .grid_4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1856,7 +1866,10 @@ footer a h4:hover {
 .hidden {
   display: none;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
+  .nav_wrapper .nav_menu_sec {
+  display: none;
+  }
   .hide {
     display: none;
   }
