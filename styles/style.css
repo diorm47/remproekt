@@ -648,6 +648,9 @@ section {
   letter-spacing: 0%;
   text-align: left;
 }
+.contact_right {
+  position: relative;
+}
 
 .contact_right h4 {
   color: rgb(239, 237, 253);

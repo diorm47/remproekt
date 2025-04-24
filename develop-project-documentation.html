@@ -319,26 +319,19 @@
           “Лично созвонимся и обсудим ваш проект, просто оставьте <br />
           заявку, и мы назначим встречу на одном из наших объектов!”
         </h4>
-        <div class="contact_form_form">
-          <input
-            type="text"
-            class="contact_input"
-            placeholder="Как вас зовут?"
-          />
-          <input
-            type="text"
-            class="contact_input"
-            placeholder="Номер телефона"
-          />
-          <div class="confirm">
-            <input type="checkbox" name="" id="" />
-            <p>
-              Я соглашаюсь на обработку персональных <br />
-              данных согласно политике конфиденциальности
-            </p>
-          </div>
-          <button class="main_btn red_btn submit_btn">Обсудить проект</button>
-        </div>
+<div class="contact_form_form">
+  <input type="text" class="contact_input" id="name" placeholder="Как вас зовут?" />
+  <input type="text" class="contact_input" id="phone" placeholder="Номер телефона" />
+  <div class="confirm">
+    <input type="checkbox" id="privacy" />
+    <p>
+      Я соглашаюсь на обработку персональных <br />
+      данных согласно политике конфиденциальности
+    </p>
+  </div>
+  <button class="main_btn red_btn submit_btn" onclick="sendTelegramMessage()">Обсудить проект</button>
+</div>
+
       </div>
     </div>
 

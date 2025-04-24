@@ -756,21 +756,28 @@
           <input
             type="text"
             class="contact_input"
+            id="name"
             placeholder="Как вас зовут?"
           />
           <input
             type="text"
             class="contact_input"
+            id="phone"
             placeholder="Номер телефона"
           />
           <div class="confirm">
-            <input type="checkbox" name="" id="" />
+            <input type="checkbox" id="privacy" />
             <p>
               Я соглашаюсь на обработку персональных <br />
               данных согласно политике конфиденциальности
             </p>
           </div>
-          <button class="main_btn red_btn submit_btn">Обсудить проект</button>
+          <button
+            class="main_btn red_btn submit_btn"
+            onclick="sendTelegramMessage()"
+          >
+            Обсудить проект
+          </button>
         </div>
       </div>
     </div>
@@ -835,5 +842,6 @@
     </footer>
 
     <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/form.js"></script>
   </body>
 </html>
