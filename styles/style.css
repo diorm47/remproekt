@@ -1243,7 +1243,8 @@ footer a h4:hover {
 }
 
 .object_desc_input_btns p,
-.object_input p, .calc_result h4 {
+.object_input p,
+.calc_result h4 {
   color: rgb(239, 237, 253);
   font-family: Manrope;
   font-size: 18px;
@@ -1533,8 +1534,8 @@ footer a h4:hover {
   background-size: cover;
   background-position: center;
 }
-.project_main_hero  .project_price {
- margin: 0;
+.project_main_hero .project_price {
+  margin: 0;
 }
 .project_price_container {
   display: none;
@@ -1788,6 +1789,38 @@ footer a h4:hover {
   margin-top: 10px;
   display: none;
 }
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px;
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  z-index: 999;
+  font-size: 16px;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+#snackbar.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+#snackbar.success {
+  background-color: #4caf50;
+}
+
+#snackbar.error {
+  background-color: #f44336;
+}
+
 @media only screen and (max-width: 1860px) {
   .container {
     padding-left: 20px;
@@ -1815,8 +1848,7 @@ footer a h4:hover {
   .nav_wrapper .nav_menu {
     display: none;
   }
-  .nav_wrapper
-  .nav_menu_sec  {
+  .nav_wrapper .nav_menu_sec {
     display: flex;
   }
   .nav_wrapper {
@@ -1871,7 +1903,7 @@ footer a h4:hover {
 }
 @media only screen and (max-width: 700px) {
   .nav_wrapper .nav_menu_sec {
-  display: none;
+    display: none;
   }
   .hide {
     display: none;
@@ -2243,13 +2275,12 @@ footer a h4:hover {
   .mt120px {
     margin-top: 50px;
   }
-  .project_main_hero  .project_price {
-display: none;
-   }
-   .project_price_container {
-     display: flex;
-   }
-   
+  .project_main_hero .project_price {
+    display: none;
+  }
+  .project_price_container {
+    display: flex;
+  }
 
   .documents_card_img {
     width: 60px;

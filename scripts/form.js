@@ -1,18 +1,28 @@
 const botToken = "8116777352:AAHGeEPXZpn1pvLnBwqJrnIwXi4dQjH1Y3g";
 const chatId = "1809341426";
 
+function showSnackbar(message, type = "success") {
+  const snackbar = document.getElementById("snackbar");
+  snackbar.textContent = message;
+  snackbar.className = `show ${type}`;
+
+  setTimeout(() => {
+    snackbar.className = snackbar.className.replace("show", "");
+  }, 3000);
+}
+
 function sendTelegramMessage() {
-  const name = document.getElementById("name").value;
-  const phone = document.getElementById("phone").value;
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
   const agreed = document.getElementById("privacy").checked;
 
   if (!name || !phone) {
-    alert("Пожалуйста, заполните все поля.");
+    showSnackbar("Пожалуйста, заполните все поля.", "error");
     return;
   }
 
   if (!agreed) {
-    alert("Пожалуйста, подтвердите согласие на обработку данных.");
+    showSnackbar("Подтвердите согласие на обработку данных.", "error");
     return;
   }
 
@@ -31,14 +41,14 @@ function sendTelegramMessage() {
     .then((response) => response.json())
     .then((data) => {
       if (data.ok) {
-        alert("Заявка отправлена!");
+        showSnackbar("Заявка успешно отправлена!", "success");
       } else {
-        alert("Ошибка при отправке сообщения.");
+        showSnackbar("Ошибка при отправке сообщения.", "error");
         console.error(data);
       }
     })
     .catch((error) => {
-      alert("Ошибка соединения.");
+      showSnackbar("Ошибка соединения с сервером.", "error");
       console.error("Error:", error);
     });
 }
